@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F2CF0E91827E65E00BAC5FD /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2CF0E81827E65E00BAC5FD /* BaseViewController.m */; };
+		6FD13A291827921100484DE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A281827921100484DE4 /* Foundation.framework */; };
+		6FD13A2B1827921100484DE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A2A1827921100484DE4 /* CoreGraphics.framework */; };
+		6FD13A2D1827921100484DE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A2C1827921100484DE4 /* UIKit.framework */; };
+		6FD13A331827921100484DE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FD13A311827921100484DE4 /* InfoPlist.strings */; };
+		6FD13A351827921100484DE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD13A341827921100484DE4 /* main.m */; };
+		6FD13A391827921100484DE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD13A381827921100484DE4 /* AppDelegate.m */; };
+		6FD13A3B1827921100484DE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD13A3A1827921100484DE4 /* Images.xcassets */; };
+		6FD13A421827921100484DE4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A411827921100484DE4 /* XCTest.framework */; };
+		6FD13A431827921100484DE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A281827921100484DE4 /* Foundation.framework */; };
+		6FD13A441827921100484DE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A2C1827921100484DE4 /* UIKit.framework */; };
+		6FD13A4C1827921100484DE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FD13A4A1827921100484DE4 /* InfoPlist.strings */; };
+		6FD13A4E1827921100484DE4 /* parkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD13A4D1827921100484DE4 /* parkingTests.m */; };
+		6FD13A5A1827925A00484DE4 /* libbaidumapapi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A591827925A00484DE4 /* libbaidumapapi.a */; };
+		6FD13A5E1827927200484DE4 /* ParkingAreaMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD13A5D1827927200484DE4 /* ParkingAreaMapViewController.m */; };
+		6FD13A86182792FB00484DE4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A85182792FB00484DE4 /* QuartzCore.framework */; };
+		6FD13A881827930A00484DE4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A871827930A00484DE4 /* CoreLocation.framework */; };
+		6FD13A8A1827930E00484DE4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A891827930E00484DE4 /* OpenGLES.framework */; };
+		6FD13A8C1827931500484DE4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A8B1827931500484DE4 /* SystemConfiguration.framework */; };
+		6FD13A8E1827931A00484DE4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A8D1827931A00484DE4 /* Security.framework */; };
+		6FD13A901827934000484DE4 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6FD13A8F1827934000484DE4 /* mapapi.bundle */; };
+		6FD13A941827937100484DE4 /* Others.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6FD13A931827937100484DE4 /* Others.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6FD13A451827921100484DE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FD13A1D1827921100484DE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FD13A241827921100484DE4;
+			remoteInfo = parking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F2CF0E71827E65E00BAC5FD /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		6F2CF0E81827E65E00BAC5FD /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		6FD13A251827921100484DE4 /* parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FD13A281827921100484DE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6FD13A2A1827921100484DE4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6FD13A2C1827921100484DE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6FD13A301827921100484DE4 /* parking-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "parking-Info.plist"; sourceTree = "<group>"; };
+		6FD13A321827921100484DE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6FD13A341827921100484DE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6FD13A361827921100484DE4 /* parking-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "parking-Prefix.pch"; sourceTree = "<group>"; };
+		6FD13A371827921100484DE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6FD13A381827921100484DE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6FD13A3A1827921100484DE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6FD13A401827921100484DE4 /* parkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = parkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FD13A411827921100484DE4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6FD13A491827921100484DE4 /* parkingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "parkingTests-Info.plist"; sourceTree = "<group>"; };
+		6FD13A4B1827921100484DE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6FD13A4D1827921100484DE4 /* parkingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = parkingTests.m; sourceTree = "<group>"; };
+		6FD13A591827925A00484DE4 /* libbaidumapapi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbaidumapapi.a; sourceTree = "<group>"; };
+		6FD13A5C1827927200484DE4 /* ParkingAreaMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingAreaMapViewController.h; sourceTree = "<group>"; };
+		6FD13A5D1827927200484DE4 /* ParkingAreaMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkingAreaMapViewController.m; sourceTree = "<group>"; };
+		6FD13A60182792BE00484DE4 /* BMapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMapKit.h; sourceTree = "<group>"; };
+		6FD13A61182792BE00484DE4 /* BMKActionPaopaoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKActionPaopaoView.h; sourceTree = "<group>"; };
+		6FD13A62182792BE00484DE4 /* BMKAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKAnnotation.h; sourceTree = "<group>"; };
+		6FD13A63182792BE00484DE4 /* BMKAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKAnnotationView.h; sourceTree = "<group>"; };
+		6FD13A64182792BE00484DE4 /* BMKCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKCircle.h; sourceTree = "<group>"; };
+		6FD13A65182792BE00484DE4 /* BMKCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKCircleView.h; sourceTree = "<group>"; };
+		6FD13A66182792BE00484DE4 /* BMKCloudPOIList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKCloudPOIList.h; sourceTree = "<group>"; };
+		6FD13A67182792BE00484DE4 /* BMKCloudSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKCloudSearch.h; sourceTree = "<group>"; };
+		6FD13A68182792BE00484DE4 /* BMKCloudSearchInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKCloudSearchInfo.h; sourceTree = "<group>"; };
+		6FD13A69182792BE00484DE4 /* BMKGeneralDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKGeneralDelegate.h; sourceTree = "<group>"; };
+		6FD13A6A182792BE00484DE4 /* BMKGeocodeType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKGeocodeType.h; sourceTree = "<group>"; };
+		6FD13A6B182792BE00484DE4 /* BMKGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKGeometry.h; sourceTree = "<group>"; };
+		6FD13A6C182792BE00484DE4 /* BMKGroundOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKGroundOverlay.h; sourceTree = "<group>"; };
+		6FD13A6D182792BE00484DE4 /* BMKGroundOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKGroundOverlayView.h; sourceTree = "<group>"; };
+		6FD13A6E182792BE00484DE4 /* BMKLocationViewDisplayParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKLocationViewDisplayParam.h; sourceTree = "<group>"; };
+		6FD13A6F182792BE00484DE4 /* BMKMapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKMapManager.h; sourceTree = "<group>"; };
+		6FD13A70182792BE00484DE4 /* BMKMapStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKMapStatus.h; sourceTree = "<group>"; };
+		6FD13A71182792BE00484DE4 /* BMKMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKMapView.h; sourceTree = "<group>"; };
+		6FD13A72182792BE00484DE4 /* BMKMultiPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKMultiPoint.h; sourceTree = "<group>"; };
+		6FD13A73182792BE00484DE4 /* BMKOfflineMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKOfflineMap.h; sourceTree = "<group>"; };
+		6FD13A74182792BE00484DE4 /* BMKOfflineMapType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKOfflineMapType.h; sourceTree = "<group>"; };
+		6FD13A75182792BE00484DE4 /* BMKOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKOverlay.h; sourceTree = "<group>"; };
+		6FD13A76182792BE00484DE4 /* BMKOverlayPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKOverlayPathView.h; sourceTree = "<group>"; };
+		6FD13A77182792BE00484DE4 /* BMKOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKOverlayView.h; sourceTree = "<group>"; };
+		6FD13A78182792BE00484DE4 /* BMKPinAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPinAnnotationView.h; sourceTree = "<group>"; };
+		6FD13A79182792BE00484DE4 /* BMKPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPointAnnotation.h; sourceTree = "<group>"; };
+		6FD13A7A182792BE00484DE4 /* BMKPoiSearchType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPoiSearchType.h; sourceTree = "<group>"; };
+		6FD13A7B182792BE00484DE4 /* BMKPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPolygon.h; sourceTree = "<group>"; };
+		6FD13A7C182792BE00484DE4 /* BMKPolygonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPolygonView.h; sourceTree = "<group>"; };
+		6FD13A7D182792BE00484DE4 /* BMKPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPolyline.h; sourceTree = "<group>"; };
+		6FD13A7E182792BE00484DE4 /* BMKPolylineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPolylineView.h; sourceTree = "<group>"; };
+		6FD13A7F182792BE00484DE4 /* BMKRouteSearchType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKRouteSearchType.h; sourceTree = "<group>"; };
+		6FD13A80182792BE00484DE4 /* BMKSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKSearch.h; sourceTree = "<group>"; };
+		6FD13A81182792BE00484DE4 /* BMKShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKShape.h; sourceTree = "<group>"; };
+		6FD13A82182792BE00484DE4 /* BMKTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKTypes.h; sourceTree = "<group>"; };
+		6FD13A83182792BE00484DE4 /* BMKUserLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKUserLocation.h; sourceTree = "<group>"; };
+		6FD13A84182792BE00484DE4 /* BMKVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKVersion.h; sourceTree = "<group>"; };
+		6FD13A85182792FB00484DE4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6FD13A871827930A00484DE4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6FD13A891827930E00484DE4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		6FD13A8B1827931500484DE4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6FD13A8D1827931A00484DE4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6FD13A8F1827934000484DE4 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
+		6FD13A921827937100484DE4 /* Others.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Others.h; sourceTree = "<group>"; };
+		6FD13A931827937100484DE4 /* Others.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Others.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6FD13A221827921100484DE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FD13A2B1827921100484DE4 /* CoreGraphics.framework in Frameworks */,
+				6FD13A8E1827931A00484DE4 /* Security.framework in Frameworks */,
+				6FD13A8C1827931500484DE4 /* SystemConfiguration.framework in Frameworks */,
+				6FD13A8A1827930E00484DE4 /* OpenGLES.framework in Frameworks */,
+				6FD13A881827930A00484DE4 /* CoreLocation.framework in Frameworks */,
+				6FD13A86182792FB00484DE4 /* QuartzCore.framework in Frameworks */,
+				6FD13A2D1827921100484DE4 /* UIKit.framework in Frameworks */,
+				6FD13A291827921100484DE4 /* Foundation.framework in Frameworks */,
+				6FD13A5A1827925A00484DE4 /* libbaidumapapi.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD13A3D1827921100484DE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FD13A421827921100484DE4 /* XCTest.framework in Frameworks */,
+				6FD13A441827921100484DE4 /* UIKit.framework in Frameworks */,
+				6FD13A431827921100484DE4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F2CF0E31827E53C00BAC5FD /* components */ = {
+			isa = PBXGroup;
+			children = (
+				6F2CF0E41827E58F00BAC5FD /* New Group */,
+			);
+			name = components;
+			sourceTree = "<group>";
+		};
+		6F2CF0E41827E58F00BAC5FD /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		6F2CF0E51827E5B800BAC5FD /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		6F2CF0E61827E64F00BAC5FD /* commons */ = {
+			isa = PBXGroup;
+			children = (
+				6F2CF0E71827E65E00BAC5FD /* BaseViewController.h */,
+				6F2CF0E81827E65E00BAC5FD /* BaseViewController.m */,
+			);
+			name = commons;
+			sourceTree = "<group>";
+		};
+		6FD13A1C1827921100484DE4 = {
+			isa = PBXGroup;
+			children = (
+				6FD13A2E1827921100484DE4 /* parking */,
+				6FD13A471827921100484DE4 /* parkingTests */,
+				6FD13A271827921100484DE4 /* Frameworks */,
+				6FD13A261827921100484DE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6FD13A261827921100484DE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FD13A251827921100484DE4 /* parking.app */,
+				6FD13A401827921100484DE4 /* parkingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FD13A271827921100484DE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FD13A8D1827931A00484DE4 /* Security.framework */,
+				6FD13A8B1827931500484DE4 /* SystemConfiguration.framework */,
+				6FD13A891827930E00484DE4 /* OpenGLES.framework */,
+				6FD13A871827930A00484DE4 /* CoreLocation.framework */,
+				6FD13A85182792FB00484DE4 /* QuartzCore.framework */,
+				6FD13A281827921100484DE4 /* Foundation.framework */,
+				6FD13A2A1827921100484DE4 /* CoreGraphics.framework */,
+				6FD13A2C1827921100484DE4 /* UIKit.framework */,
+				6FD13A411827921100484DE4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6FD13A2E1827921100484DE4 /* parking */ = {
+			isa = PBXGroup;
+			children = (
+				6F2CF0E51827E5B800BAC5FD /* models */,
+				6F2CF0E31827E53C00BAC5FD /* components */,
+				6FD13A911827935D00484DE4 /* other */,
+				6FD13A5B1827926100484DE4 /* controllers */,
+				6FD13A571827923800484DE4 /* third */,
+				6FD13A371827921100484DE4 /* AppDelegate.h */,
+				6FD13A381827921100484DE4 /* AppDelegate.m */,
+				6FD13A3A1827921100484DE4 /* Images.xcassets */,
+				6FD13A2F1827921100484DE4 /* Supporting Files */,
+			);
+			path = parking;
+			sourceTree = "<group>";
+		};
+		6FD13A2F1827921100484DE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6FD13A301827921100484DE4 /* parking-Info.plist */,
+				6FD13A311827921100484DE4 /* InfoPlist.strings */,
+				6FD13A341827921100484DE4 /* main.m */,
+				6FD13A361827921100484DE4 /* parking-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6FD13A471827921100484DE4 /* parkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				6FD13A4D1827921100484DE4 /* parkingTests.m */,
+				6FD13A481827921100484DE4 /* Supporting Files */,
+			);
+			path = parkingTests;
+			sourceTree = "<group>";
+		};
+		6FD13A481827921100484DE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6FD13A491827921100484DE4 /* parkingTests-Info.plist */,
+				6FD13A4A1827921100484DE4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6FD13A571827923800484DE4 /* third */ = {
+			isa = PBXGroup;
+			children = (
+				6FD13A581827924200484DE4 /* baidu_maps */,
+			);
+			name = third;
+			sourceTree = "<group>";
+		};
+		6FD13A581827924200484DE4 /* baidu_maps */ = {
+			isa = PBXGroup;
+			children = (
+				6FD13A8F1827934000484DE4 /* mapapi.bundle */,
+				6FD13A5F182792BE00484DE4 /* inc */,
+				6FD13A591827925A00484DE4 /* libbaidumapapi.a */,
+			);
+			name = baidu_maps;
+			sourceTree = "<group>";
+		};
+		6FD13A5B1827926100484DE4 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6F2CF0E61827E64F00BAC5FD /* commons */,
+				6FD13A5C1827927200484DE4 /* ParkingAreaMapViewController.h */,
+				6FD13A5D1827927200484DE4 /* ParkingAreaMapViewController.m */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		6FD13A5F182792BE00484DE4 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				6FD13A60182792BE00484DE4 /* BMapKit.h */,
+				6FD13A61182792BE00484DE4 /* BMKActionPaopaoView.h */,
+				6FD13A62182792BE00484DE4 /* BMKAnnotation.h */,
+				6FD13A63182792BE00484DE4 /* BMKAnnotationView.h */,
+				6FD13A64182792BE00484DE4 /* BMKCircle.h */,
+				6FD13A65182792BE00484DE4 /* BMKCircleView.h */,
+				6FD13A66182792BE00484DE4 /* BMKCloudPOIList.h */,
+				6FD13A67182792BE00484DE4 /* BMKCloudSearch.h */,
+				6FD13A68182792BE00484DE4 /* BMKCloudSearchInfo.h */,
+				6FD13A69182792BE00484DE4 /* BMKGeneralDelegate.h */,
+				6FD13A6A182792BE00484DE4 /* BMKGeocodeType.h */,
+				6FD13A6B182792BE00484DE4 /* BMKGeometry.h */,
+				6FD13A6C182792BE00484DE4 /* BMKGroundOverlay.h */,
+				6FD13A6D182792BE00484DE4 /* BMKGroundOverlayView.h */,
+				6FD13A6E182792BE00484DE4 /* BMKLocationViewDisplayParam.h */,
+				6FD13A6F182792BE00484DE4 /* BMKMapManager.h */,
+				6FD13A70182792BE00484DE4 /* BMKMapStatus.h */,
+				6FD13A71182792BE00484DE4 /* BMKMapView.h */,
+				6FD13A72182792BE00484DE4 /* BMKMultiPoint.h */,
+				6FD13A73182792BE00484DE4 /* BMKOfflineMap.h */,
+				6FD13A74182792BE00484DE4 /* BMKOfflineMapType.h */,
+				6FD13A75182792BE00484DE4 /* BMKOverlay.h */,
+				6FD13A76182792BE00484DE4 /* BMKOverlayPathView.h */,
+				6FD13A77182792BE00484DE4 /* BMKOverlayView.h */,
+				6FD13A78182792BE00484DE4 /* BMKPinAnnotationView.h */,
+				6FD13A79182792BE00484DE4 /* BMKPointAnnotation.h */,
+				6FD13A7A182792BE00484DE4 /* BMKPoiSearchType.h */,
+				6FD13A7B182792BE00484DE4 /* BMKPolygon.h */,
+				6FD13A7C182792BE00484DE4 /* BMKPolygonView.h */,
+				6FD13A7D182792BE00484DE4 /* BMKPolyline.h */,
+				6FD13A7E182792BE00484DE4 /* BMKPolylineView.h */,
+				6FD13A7F182792BE00484DE4 /* BMKRouteSearchType.h */,
+				6FD13A80182792BE00484DE4 /* BMKSearch.h */,
+				6FD13A81182792BE00484DE4 /* BMKShape.h */,
+				6FD13A82182792BE00484DE4 /* BMKTypes.h */,
+				6FD13A83182792BE00484DE4 /* BMKUserLocation.h */,
+				6FD13A84182792BE00484DE4 /* BMKVersion.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		6FD13A911827935D00484DE4 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				6FD13A921827937100484DE4 /* Others.h */,
+				6FD13A931827937100484DE4 /* Others.mm */,
+			);
+			name = other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6FD13A241827921100484DE4 /* parking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FD13A511827921100484DE4 /* Build configuration list for PBXNativeTarget "parking" */;
+			buildPhases = (
+				6FD13A211827921100484DE4 /* Sources */,
+				6FD13A221827921100484DE4 /* Frameworks */,
+				6FD13A231827921100484DE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = parking;
+			productName = parking;
+			productReference = 6FD13A251827921100484DE4 /* parking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6FD13A3F1827921100484DE4 /* parkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FD13A541827921100484DE4 /* Build configuration list for PBXNativeTarget "parkingTests" */;
+			buildPhases = (
+				6FD13A3C1827921100484DE4 /* Sources */,
+				6FD13A3D1827921100484DE4 /* Frameworks */,
+				6FD13A3E1827921100484DE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FD13A461827921100484DE4 /* PBXTargetDependency */,
+			);
+			name = parkingTests;
+			productName = parkingTests;
+			productReference = 6FD13A401827921100484DE4 /* parkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6FD13A1D1827921100484DE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = hentre;
+				TargetAttributes = {
+					6FD13A3F1827921100484DE4 = {
+						TestTargetID = 6FD13A241827921100484DE4;
+					};
+				};
+			};
+			buildConfigurationList = 6FD13A201827921100484DE4 /* Build configuration list for PBXProject "parking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6FD13A1C1827921100484DE4;
+			productRefGroup = 6FD13A261827921100484DE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6FD13A241827921100484DE4 /* parking */,
+				6FD13A3F1827921100484DE4 /* parkingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6FD13A231827921100484DE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FD13A901827934000484DE4 /* mapapi.bundle in Resources */,
+				6FD13A331827921100484DE4 /* InfoPlist.strings in Resources */,
+				6FD13A3B1827921100484DE4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD13A3E1827921100484DE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FD13A4C1827921100484DE4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FD13A211827921100484DE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FD13A941827937100484DE4 /* Others.mm in Sources */,
+				6F2CF0E91827E65E00BAC5FD /* BaseViewController.m in Sources */,
+				6FD13A391827921100484DE4 /* AppDelegate.m in Sources */,
+				6FD13A5E1827927200484DE4 /* ParkingAreaMapViewController.m in Sources */,
+				6FD13A351827921100484DE4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD13A3C1827921100484DE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FD13A4E1827921100484DE4 /* parkingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FD13A461827921100484DE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FD13A241827921100484DE4 /* parking */;
+			targetProxy = 6FD13A451827921100484DE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6FD13A311827921100484DE4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FD13A321827921100484DE4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6FD13A4A1827921100484DE4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FD13A4B1827921100484DE4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6FD13A4F1827921100484DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				New_Setting = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-all_load";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6FD13A501827921100484DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				New_Setting = "";
+				OTHER_LDFLAGS = "-all_load";
+				"OTHER_LDFLAGS[arch=*]" = "-all_load";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6FD13A521827921100484DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "parking/parking-Prefix.pch";
+				INFOPLIST_FILE = "parking/parking-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/young/Downloads/SmartParking/parking/parking,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6FD13A531827921100484DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "parking/parking-Prefix.pch";
+				INFOPLIST_FILE = "parking/parking-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/young/Downloads/SmartParking/parking/parking,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6FD13A551827921100484DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/parking.app/parking";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "parking/parking-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "parkingTests/parkingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6FD13A561827921100484DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/parking.app/parking";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "parking/parking-Prefix.pch";
+				INFOPLIST_FILE = "parkingTests/parkingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6FD13A201827921100484DE4 /* Build configuration list for PBXProject "parking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FD13A4F1827921100484DE4 /* Debug */,
+				6FD13A501827921100484DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FD13A511827921100484DE4 /* Build configuration list for PBXNativeTarget "parking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FD13A521827921100484DE4 /* Debug */,
+				6FD13A531827921100484DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FD13A541827921100484DE4 /* Build configuration list for PBXNativeTarget "parkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FD13A551827921100484DE4 /* Debug */,
+				6FD13A561827921100484DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6FD13A1D1827921100484DE4 /* Project object */;
+}
