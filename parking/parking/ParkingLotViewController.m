@@ -1,18 +1,19 @@
 //
-//  ParkingAreaMapViewController.m
+//  ParkingLotViewController.m
 //  parking
 //
 //  Created by Zhao yang on 11/4/13.
 //  Copyright (c) 2013 hentre. All rights reserved.
 //
 
-#import "ParkingAreaMapViewController.h"
+#import "ParkingLotViewController.h"
+#import "ParkingLotBubbleView.h"
 
-@interface ParkingAreaMapViewController ()
+@interface ParkingLotViewController ()
 
 @end
 
-@implementation ParkingAreaMapViewController {
+@implementation ParkingLotViewController {
     BMKMapView *mapView;
 }
 
@@ -41,7 +42,7 @@
     
    
     UIButton *btn =    [[UIButton alloc] initWithFrame:CGRectMake(10, 430, 150, 25)];
-    [    btn setBackgroundColor:[UIColor blackColor]];
+    [btn setBackgroundColor:[UIColor blackColor]];
     [btn setTitle:@"sssss" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(jjj) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
@@ -59,7 +60,6 @@
     annotation.coordinate = coor;
     annotation.title = @"这里是北京";
     [mapView addAnnotation:annotation];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -89,12 +89,7 @@
     v.paopaoView = [[BMKActionPaopaoView alloc] initWithCustomView:vv];
     
     
-    
     return v;
-    
-    
-    
-    
 }
 
 - (void)mapView:(BMKMapView *)mapView didAddAnnotationViews:(NSArray *)views {

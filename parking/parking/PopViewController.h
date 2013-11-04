@@ -1,5 +1,5 @@
 //
-//  ParkingAreaMapViewController.h
+//  PopViewController.h
 //  parking
 //
 //  Created by Zhao yang on 11/4/13.
@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BMapKit.h"
+#import "BaseViewController.h"
 
-@interface ParkingAreaMapViewController : UIViewController<BMKMapViewDelegate>
+@interface PopViewController : UIViewController
 
 @end

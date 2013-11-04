@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NSString+Utils.h"
 
 @interface BaseViewController : UIViewController
 
