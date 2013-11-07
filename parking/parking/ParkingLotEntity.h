@@ -17,4 +17,6 @@
 @property (assign, nonatomic) NSUInteger numberOfParkingSpace;
 @property (assign, nonatomic) NSUInteger numberOfEmptyParkingSpace;
 
+@property (strong, nonatomic) NSString *address;
+
 @end

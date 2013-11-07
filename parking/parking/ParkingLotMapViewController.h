@@ -1,5 +1,5 @@
 //
-//  ParkingLotViewController.h
+//  ParkingLotMapViewController.h
 //  parking
 //
 //  Created by Zhao yang on 11/4/13.
@@ -10,7 +10,7 @@
 #import "BaseViewController.h"
 #import "BMapKit.h"
 
-@interface ParkingLotViewController : BaseViewController<BMKMapViewDelegate, BMKSearchDelegate>
+@interface ParkingLotMapViewController : BaseViewController<BMKMapViewDelegate, BMKSearchDelegate>
 
 @property (strong, nonatomic) NSMutableArray *parkingLots;
 

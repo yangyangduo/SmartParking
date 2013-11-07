@@ -31,15 +31,22 @@
 
 - (void)initUI {
     self.backgroundColor = [UIColor whiteColor];
-    self.alpha = 0.9f;
+    self.alpha = 0.95f;
     
-    lblParkingLotName = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
+    lblParkingLotName = [[UILabel alloc] initWithFrame:CGRectMake(10, 12, 160, 29)];
+    lblParkingLotName.font = [UIFont boldSystemFontOfSize:16.f];
     [self addSubview:lblParkingLotName];
     
-    lblParkingSpaceInfo = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
+    lblParkingSpaceInfo = [[UILabel alloc] initWithFrame:CGRectMake(175, 12, 135, 29)];
+    lblParkingSpaceInfo.font = [UIFont systemFontOfSize:11.f];
+    lblParkingSpaceInfo.textColor = [UIColor darkTextColor];
+    lblParkingSpaceInfo.textAlignment = NSTextAlignmentRight;
     [self addSubview:lblParkingSpaceInfo];
     
-    btnPathPlanning = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
+    btnPathPlanning = [[UIButton alloc] initWithFrame:CGRectMake(10, 50, 120, 29)];
+    [btnPathPlanning setTitle:@"路径规划" forState:UIControlStateNormal];
+    btnPathPlanning.backgroundColor = [UIColor blackColor];
+    [btnPathPlanning setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [btnPathPlanning addTarget:self action:@selector(pathPlanning:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:btnPathPlanning];
 }
@@ -52,8 +59,7 @@
     _entity_ = parkingLotEntity;
     if(_entity_ != nil) {
         lblParkingLotName.text = _entity_.name;
-        
-        [NSString stringWithFormat:@"%d / %d %@", _entity_.numberOfEmptyParkingSpace, _entity_.numberOfParkingSpace, @""];
+        lblParkingSpaceInfo.text = [NSString stringWithFormat:@"%@: (%d/%d) %@",NSLocalizedString(@"parking_space_remain", @""), _entity_.numberOfEmptyParkingSpace, _entity_.numberOfParkingSpace, NSLocalizedString(@"parking_space", @"")];
     } else {
         lblParkingLotName.text = [NSString emptyString];
         lblParkingSpaceInfo.text = [NSString emptyString];

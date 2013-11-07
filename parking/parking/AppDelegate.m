@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ParkingLotViewController.h"
+#import "ParkingLotMapViewController.h"
 
 @implementation AppDelegate {
     BMKMapManager *_mapManager;
@@ -23,7 +23,7 @@
     
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [[ParkingLotViewController alloc] init];
+    self.window.rootViewController = [[ParkingLotMapViewController alloc] init];
     [self.window makeKeyAndVisible];
     
     return YES;

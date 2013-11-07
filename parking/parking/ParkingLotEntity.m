@@ -16,6 +16,8 @@
 @synthesize numberOfEmptyParkingSpace;
 @synthesize numberOfParkingSpace;
 
+@synthesize address;
+
 - (id)initWithDictionary:(NSDictionary *)dic {
     self = [super initWithDictionary:dic];
     if(self && dic) {
@@ -23,6 +25,7 @@
         self.longitude = [dic doubleForKey:@"longitude"];
         self.numberOfParkingSpace = [dic integerForKey:@"parkingSpaceCount"];
         self.numberOfEmptyParkingSpace = [dic integerForKey:@"emptyParkingSpaceCount"];
+        self.address = [dic noNilStringForKey:@"address"];
     }
     return self;
 }
@@ -33,6 +36,7 @@
     [dic setDouble:self.longitude forKey:@"longitude"];
     [dic setInteger:self.numberOfEmptyParkingSpace forKey:@"parkingSpaceCount"];
     [dic setInteger:self.numberOfParkingSpace forKey:@"emptyParkingSpaceCount"];
+    [dic setMayBlankString:self.address forKey:@"address"];
     return dic;
 }
 

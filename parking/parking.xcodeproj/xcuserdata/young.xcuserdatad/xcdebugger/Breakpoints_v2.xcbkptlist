@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "parking/ParkingLotViewController.mm"
-            timestampString = "405484931.935837"
+            filePath = "parking/ParkingLotMapViewController.mm"
+            timestampString = "405508488.802043"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "361"
             endingLineNumber = "361"
-            landmarkName = "@implementation ParkingLotViewController"
+            landmarkName = "@implementation ParkingLotMapViewController"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "parking/ParkingLotViewController.mm"
-            timestampString = "405483999.253516"
+            filePath = "parking/ParkingLotMapViewController.mm"
+            timestampString = "405508488.802043"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
-            landmarkName = "@implementation ParkingLotViewController"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "@implementation ParkingLotMapViewController"
             landmarkType = "3">
             <Locations>
                <Location

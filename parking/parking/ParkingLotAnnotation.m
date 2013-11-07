@@ -10,4 +10,6 @@
 
 @implementation ParkingLotAnnotation
 
+@synthesize parkingLotEntity;
+
 @end

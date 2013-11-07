@@ -7,7 +7,10 @@
 //
 
 #import "BMKPointAnnotation.h"
+#import "ParkingLotEntity.h"
 
 @interface ParkingLotAnnotation : BMKPointAnnotation
+
+@property (strong, nonatomic) ParkingLotEntity *parkingLotEntity;
 
 @end

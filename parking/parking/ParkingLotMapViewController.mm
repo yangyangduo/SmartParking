@@ -1,12 +1,12 @@
 //
-//  ParkingLotViewController.m
+//  ParkingLotMapViewController.mm
 //  parking
 //
 //  Created by Zhao yang on 11/4/13.
 //  Copyright (c) 2013 hentre. All rights reserved.
 //
 
-#import "ParkingLotViewController.h"
+#import "ParkingLotMapViewController.h"
 #import "UIImage+Extension.h"
 #import "ParkingLotAnnotationView.h"
 #import "ParkingLotBubbleView.h"
@@ -35,11 +35,11 @@
 
 
 
-@interface ParkingLotViewController ()
+@interface ParkingLotMapViewController ()
 
 @end
 
-@implementation ParkingLotViewController {
+@implementation ParkingLotMapViewController {
     BMKMapView *_mapView_;
     BMKSearch *_routeSearch_;
     ParkingLotBubbleView *_bubbleView_;
@@ -97,18 +97,17 @@
     ParkingLotEntity *en = [[ParkingLotEntity alloc] init];
     en.latitude = 28.234484;
     en.longitude = 112.945181;
+    en.numberOfEmptyParkingSpace = 241;
+    en.numberOfParkingSpace = 1200;
+    en.name = @"万达停车场";
     
     [self.parkingLots addObject:en];
 }
 
-- (void)initUI {
-    self.view.backgroundColor = [UIColor yellowColor];
-    
+- (void)initUI {    
     _mapView_ = [[BMKMapView alloc] initWithFrame:self.view.bounds];
     _mapView_.delegate = self;
     [self.view addSubview:_mapView_];
-    
-
     
 //    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(10, 430, 150, 25)];
 //    [btn setBackgroundColor:[UIColor blackColor]];
@@ -135,6 +134,7 @@
         coor.latitude = entity.latitude;
         coor.longitude = entity.longitude;
         annotation.coordinate = coor;
+        annotation.parkingLotEntity = entity;
         [annotations addObject:annotation];
     }
     
@@ -363,7 +363,7 @@
 - (BMKAnnotationView *)mapView:(BMKMapView *)mapView viewForAnnotation:(id<BMKAnnotation>)annotation {
     if([annotation isKindOfClass:[RouteAnnotation class]]) {
         return [self getRouteAnnotationView:mapView viewForAnnotation:(RouteAnnotation *)annotation];
-    } else if([annotation isKindOfClass:[BMKPointAnnotation class]]) {
+    } else if([annotation isKindOfClass:[ParkingLotAnnotation class]]) {
         ParkingLotAnnotationView *annotationView = [[ParkingLotAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"parking_node"];
         annotationView.canShowCallout = NO;
         return annotationView;
@@ -384,9 +384,11 @@
 
 - (void)mapView:(BMKMapView *)mapView didSelectAnnotationView:(BMKAnnotationView *)view {
     if([view isKindOfClass:[ParkingLotAnnotationView class]]) {
-        
-        
-        [self showParkingLotViewWithEntity:nil];
+        ParkingLotAnnotationView *annotationView = (ParkingLotAnnotationView *)view;
+        if([annotationView.annotation isKindOfClass:[ParkingLotAnnotation class]]) {
+            ParkingLotAnnotation *parkingLotAnnotation = (ParkingLotAnnotation *)annotationView.annotation;
+            [self showParkingLotViewWithEntity:parkingLotAnnotation.parkingLotEntity];
+        }
     }
 }
 

@@ -22,6 +22,7 @@
 		6F4B6E7F182B3A91001BDDA9 /* icon_parking_lot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F4B6E7E182B3A91001BDDA9 /* icon_parking_lot@2x.png */; };
 		6F7ED27F182B79C2005C7D30 /* DrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7ED27E182B79C2005C7D30 /* DrawerViewController.m */; };
 		6F7ED282182B7ADB005C7D30 /* UIDevice+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7ED281182B7ADB005C7D30 /* UIDevice+Extension.m */; };
+		6F7ED287182B8EB4005C7D30 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F7ED289182B8EB4005C7D30 /* Localizable.strings */; };
 		6FD13A291827921100484DE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A281827921100484DE4 /* Foundation.framework */; };
 		6FD13A2B1827921100484DE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A2A1827921100484DE4 /* CoreGraphics.framework */; };
 		6FD13A2D1827921100484DE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A2C1827921100484DE4 /* UIKit.framework */; };
@@ -35,7 +36,7 @@
 		6FD13A4C1827921100484DE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FD13A4A1827921100484DE4 /* InfoPlist.strings */; };
 		6FD13A4E1827921100484DE4 /* parkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD13A4D1827921100484DE4 /* parkingTests.m */; };
 		6FD13A5A1827925A00484DE4 /* libbaidumapapi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A591827925A00484DE4 /* libbaidumapapi.a */; };
-		6FD13A5E1827927200484DE4 /* ParkingLotViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6FD13A5D1827927200484DE4 /* ParkingLotViewController.mm */; };
+		6FD13A5E1827927200484DE4 /* ParkingLotMapViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6FD13A5D1827927200484DE4 /* ParkingLotMapViewController.mm */; };
 		6FD13A86182792FB00484DE4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A85182792FB00484DE4 /* QuartzCore.framework */; };
 		6FD13A881827930A00484DE4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A871827930A00484DE4 /* CoreLocation.framework */; };
 		6FD13A8A1827930E00484DE4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A891827930E00484DE4 /* OpenGLES.framework */; };
@@ -84,6 +85,10 @@
 		6F7ED27E182B79C2005C7D30 /* DrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerViewController.m; sourceTree = "<group>"; };
 		6F7ED280182B7ADB005C7D30 /* UIDevice+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Extension.h"; sourceTree = "<group>"; };
 		6F7ED281182B7ADB005C7D30 /* UIDevice+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Extension.m"; sourceTree = "<group>"; };
+		6F7ED285182B8EA6005C7D30 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		6F7ED286182B8EA6005C7D30 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		6F7ED288182B8EB4005C7D30 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6F7ED28A182B8EB8005C7D30 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6FD13A251827921100484DE4 /* parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD13A281827921100484DE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6FD13A2A1827921100484DE4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -101,8 +106,8 @@
 		6FD13A4B1827921100484DE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6FD13A4D1827921100484DE4 /* parkingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = parkingTests.m; sourceTree = "<group>"; };
 		6FD13A591827925A00484DE4 /* libbaidumapapi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbaidumapapi.a; sourceTree = "<group>"; };
-		6FD13A5C1827927200484DE4 /* ParkingLotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingLotViewController.h; sourceTree = "<group>"; };
-		6FD13A5D1827927200484DE4 /* ParkingLotViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ParkingLotViewController.mm; sourceTree = "<group>"; };
+		6FD13A5C1827927200484DE4 /* ParkingLotMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingLotMapViewController.h; sourceTree = "<group>"; };
+		6FD13A5D1827927200484DE4 /* ParkingLotMapViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ParkingLotMapViewController.mm; sourceTree = "<group>"; };
 		6FD13A60182792BE00484DE4 /* BMapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMapKit.h; sourceTree = "<group>"; };
 		6FD13A61182792BE00484DE4 /* BMKActionPaopaoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKActionPaopaoView.h; sourceTree = "<group>"; };
 		6FD13A62182792BE00484DE4 /* BMKAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKAnnotation.h; sourceTree = "<group>"; };
@@ -341,6 +346,7 @@
 				6FD13A311827921100484DE4 /* InfoPlist.strings */,
 				6FD13A341827921100484DE4 /* main.m */,
 				6FD13A361827921100484DE4 /* parking-Prefix.pch */,
+				6F7ED289182B8EB4005C7D30 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -385,8 +391,8 @@
 			isa = PBXGroup;
 			children = (
 				6F2CF0E61827E64F00BAC5FD /* commons */,
-				6FD13A5C1827927200484DE4 /* ParkingLotViewController.h */,
-				6FD13A5D1827927200484DE4 /* ParkingLotViewController.mm */,
+				6FD13A5C1827927200484DE4 /* ParkingLotMapViewController.h */,
+				6FD13A5D1827927200484DE4 /* ParkingLotMapViewController.mm */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -493,6 +499,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
 			);
 			mainGroup = 6FD13A1C1827921100484DE4;
 			productRefGroup = 6FD13A261827921100484DE4 /* Products */;
@@ -510,6 +517,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F7ED287182B8EB4005C7D30 /* Localizable.strings in Resources */,
 				6FD13A901827934000484DE4 /* mapapi.bundle in Resources */,
 				6FD13A331827921100484DE4 /* InfoPlist.strings in Resources */,
 				6F4B6E7F182B3A91001BDDA9 /* icon_parking_lot@2x.png in Resources */,
@@ -547,7 +555,7 @@
 				6F2CF1011827ED5D00BAC5FD /* BaseEntity.m in Sources */,
 				6F2CF0EF1827EA9000BAC5FD /* ParkingLotEntity.m in Sources */,
 				6F2CF0FD1827EC8800BAC5FD /* NSString+Utils.m in Sources */,
-				6FD13A5E1827927200484DE4 /* ParkingLotViewController.mm in Sources */,
+				6FD13A5E1827927200484DE4 /* ParkingLotMapViewController.mm in Sources */,
 				6FD13A351827921100484DE4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,10 +579,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		6F7ED289182B8EB4005C7D30 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F7ED288182B8EB4005C7D30 /* en */,
+				6F7ED28A182B8EB8005C7D30 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		6FD13A311827921100484DE4 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6FD13A321827921100484DE4 /* en */,
+				6F7ED285182B8EA6005C7D30 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -583,6 +601,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6FD13A4B1827921100484DE4 /* en */,
+				6F7ED286182B8EA6005C7D30 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
