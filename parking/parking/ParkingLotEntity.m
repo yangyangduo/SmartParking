@@ -10,9 +10,23 @@
 
 @implementation ParkingLotEntity
 
-@synthesize identifier;
-@synthesize name;
 @synthesize latitude;
 @synthesize longitude;
+
+- (id)initWithDictionary:(NSDictionary *)dic {
+    self = [super initWithDictionary:dic];
+    if(self && dic) {
+        self.latitude = [dic doubleForKey:@"latitude"];
+        self.longitude = [dic doubleForKey:@"longitude"];
+    }
+    return self;
+}
+
+- (NSMutableDictionary *)toDictionary {
+    NSMutableDictionary *dic = [super toDictionary];
+    [dic setDouble:self.latitude forKey:@"latitude"];
+    [dic setDouble:self.longitude forKey:@"longitude"];
+    return dic;
+}
 
 @end

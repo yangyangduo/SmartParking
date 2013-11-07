@@ -9,14 +9,60 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "parking/ParkingLotViewController.m"
-            timestampString = "405268971.749801"
+            filePath = "parking/ParkingLotViewController.mm"
+            timestampString = "405482499.823822"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "331"
+            endingLineNumber = "331"
             landmarkName = "-mapView:viewForAnnotation:"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "parking/ParkingLotViewController.mm"
+            timestampString = "405481120.701507"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "-showParkingLotsOnMap"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ParkingLotViewController showParkingLotsOnMap]"
+                  moduleName = "parking"
+                  urlString = "file:///Users/young/Downloads/SmartParking/parking/parking/ParkingLotViewController.mm"
+                  timestampString = "405419784.427765"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "588">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ParkingLotViewController showParkingLotsOnMap]"
+                  moduleName = "parking"
+                  urlString = "file:///Users/young/Downloads/SmartParking/parking/parking/ParkingLotViewController.mm"
+                  timestampString = "405419784.428179"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "1110">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

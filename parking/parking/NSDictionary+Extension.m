@@ -57,6 +57,12 @@
     return number.integerValue;
 }
 
+- (double)doubleForKey:(id)key {
+    NSNumber *number = [self notNSNullObjectForKey:key];
+    if(number == nil) return 0;
+    return number.doubleValue;
+}
+
 - (BOOL)boolForKey:(id)key {
     NSString *_bool_ = [self notNSNullObjectForKey:key];
     if(_bool_ != nil) {

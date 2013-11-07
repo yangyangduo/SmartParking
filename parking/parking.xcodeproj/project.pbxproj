@@ -16,6 +16,10 @@
 		6F2CF1011827ED5D00BAC5FD /* BaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2CF1001827ED5D00BAC5FD /* BaseEntity.m */; };
 		6F2CF1041827EDCB00BAC5FD /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2CF1031827EDCB00BAC5FD /* PopViewController.m */; };
 		6F2CF1071827EDD600BAC5FD /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2CF1061827EDD600BAC5FD /* NavigationViewController.m */; };
+		6F4B6E721829D4A7001BDDA9 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4B6E711829D4A7001BDDA9 /* UIImage+Extension.m */; };
+		6F4B6E75182A1EDE001BDDA9 /* ParkingLotAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4B6E74182A1EDE001BDDA9 /* ParkingLotAnnotationView.m */; };
+		6F4B6E78182A3096001BDDA9 /* ParkingLotAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4B6E77182A3096001BDDA9 /* ParkingLotAnnotation.m */; };
+		6F4B6E7B182B2980001BDDA9 /* icon_parking_lot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F4B6E7A182B2980001BDDA9 /* icon_parking_lot@2x.png */; };
 		6FD13A291827921100484DE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A281827921100484DE4 /* Foundation.framework */; };
 		6FD13A2B1827921100484DE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A2A1827921100484DE4 /* CoreGraphics.framework */; };
 		6FD13A2D1827921100484DE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A2C1827921100484DE4 /* UIKit.framework */; };
@@ -29,14 +33,13 @@
 		6FD13A4C1827921100484DE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FD13A4A1827921100484DE4 /* InfoPlist.strings */; };
 		6FD13A4E1827921100484DE4 /* parkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD13A4D1827921100484DE4 /* parkingTests.m */; };
 		6FD13A5A1827925A00484DE4 /* libbaidumapapi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A591827925A00484DE4 /* libbaidumapapi.a */; };
-		6FD13A5E1827927200484DE4 /* ParkingLotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD13A5D1827927200484DE4 /* ParkingLotViewController.m */; };
+		6FD13A5E1827927200484DE4 /* ParkingLotViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6FD13A5D1827927200484DE4 /* ParkingLotViewController.mm */; };
 		6FD13A86182792FB00484DE4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A85182792FB00484DE4 /* QuartzCore.framework */; };
 		6FD13A881827930A00484DE4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A871827930A00484DE4 /* CoreLocation.framework */; };
 		6FD13A8A1827930E00484DE4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A891827930E00484DE4 /* OpenGLES.framework */; };
 		6FD13A8C1827931500484DE4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A8B1827931500484DE4 /* SystemConfiguration.framework */; };
 		6FD13A8E1827931A00484DE4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A8D1827931A00484DE4 /* Security.framework */; };
 		6FD13A901827934000484DE4 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6FD13A8F1827934000484DE4 /* mapapi.bundle */; };
-		6FD13A941827937100484DE4 /* Others.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6FD13A931827937100484DE4 /* Others.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,13 @@
 		6F2CF1031827EDCB00BAC5FD /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
 		6F2CF1051827EDD600BAC5FD /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
 		6F2CF1061827EDD600BAC5FD /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		6F4B6E701829D4A7001BDDA9 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		6F4B6E711829D4A7001BDDA9 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		6F4B6E73182A1EDE001BDDA9 /* ParkingLotAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingLotAnnotationView.h; sourceTree = "<group>"; };
+		6F4B6E74182A1EDE001BDDA9 /* ParkingLotAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkingLotAnnotationView.m; sourceTree = "<group>"; };
+		6F4B6E76182A3096001BDDA9 /* ParkingLotAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingLotAnnotation.h; sourceTree = "<group>"; };
+		6F4B6E77182A3096001BDDA9 /* ParkingLotAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkingLotAnnotation.m; sourceTree = "<group>"; };
+		6F4B6E7A182B2980001BDDA9 /* icon_parking_lot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_parking_lot@2x.png"; sourceTree = "<group>"; };
 		6FD13A251827921100484DE4 /* parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD13A281827921100484DE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6FD13A2A1827921100484DE4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,7 +96,7 @@
 		6FD13A4D1827921100484DE4 /* parkingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = parkingTests.m; sourceTree = "<group>"; };
 		6FD13A591827925A00484DE4 /* libbaidumapapi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbaidumapapi.a; sourceTree = "<group>"; };
 		6FD13A5C1827927200484DE4 /* ParkingLotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingLotViewController.h; sourceTree = "<group>"; };
-		6FD13A5D1827927200484DE4 /* ParkingLotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkingLotViewController.m; sourceTree = "<group>"; };
+		6FD13A5D1827927200484DE4 /* ParkingLotViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ParkingLotViewController.mm; sourceTree = "<group>"; };
 		6FD13A60182792BE00484DE4 /* BMapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMapKit.h; sourceTree = "<group>"; };
 		6FD13A61182792BE00484DE4 /* BMKActionPaopaoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKActionPaopaoView.h; sourceTree = "<group>"; };
 		6FD13A62182792BE00484DE4 /* BMKAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKAnnotation.h; sourceTree = "<group>"; };
@@ -130,8 +140,6 @@
 		6FD13A8B1827931500484DE4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6FD13A8D1827931A00484DE4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		6FD13A8F1827934000484DE4 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
-		6FD13A921827937100484DE4 /* Others.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Others.h; sourceTree = "<group>"; };
-		6FD13A931827937100484DE4 /* Others.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Others.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +185,10 @@
 			children = (
 				6F2CF0EA1827E88700BAC5FD /* ParkingLotBubbleView.h */,
 				6F2CF0EB1827E88700BAC5FD /* ParkingLotBubbleView.m */,
+				6F4B6E73182A1EDE001BDDA9 /* ParkingLotAnnotationView.h */,
+				6F4B6E74182A1EDE001BDDA9 /* ParkingLotAnnotationView.m */,
+				6F4B6E76182A3096001BDDA9 /* ParkingLotAnnotation.h */,
+				6F4B6E77182A3096001BDDA9 /* ParkingLotAnnotation.m */,
 			);
 			name = maps;
 			sourceTree = "<group>";
@@ -207,6 +219,7 @@
 		6F2CF0F01827EBED00BAC5FD /* commons */ = {
 			isa = PBXGroup;
 			children = (
+				6F4B6E6C1828F051001BDDA9 /* restclient */,
 				6F2CF0F11827EBF500BAC5FD /* categories */,
 			);
 			name = commons;
@@ -221,6 +234,8 @@
 				6F2CF0F31827EC1400BAC5FD /* NSDictionary+Extension.m */,
 				6F2CF0F51827EC2700BAC5FD /* NSMutableDictionary+Extension.h */,
 				6F2CF0F61827EC2700BAC5FD /* NSMutableDictionary+Extension.m */,
+				6F4B6E701829D4A7001BDDA9 /* UIImage+Extension.h */,
+				6F4B6E711829D4A7001BDDA9 /* UIImage+Extension.m */,
 			);
 			name = categories;
 			sourceTree = "<group>";
@@ -232,6 +247,21 @@
 				6F2CF1001827ED5D00BAC5FD /* BaseEntity.m */,
 			);
 			name = commons;
+			sourceTree = "<group>";
+		};
+		6F4B6E6C1828F051001BDDA9 /* restclient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = restclient;
+			sourceTree = "<group>";
+		};
+		6F4B6E79182B295E001BDDA9 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				6F4B6E7A182B2980001BDDA9 /* icon_parking_lot@2x.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 		6FD13A1C1827921100484DE4 = {
@@ -272,10 +302,10 @@
 		6FD13A2E1827921100484DE4 /* parking */ = {
 			isa = PBXGroup;
 			children = (
+				6F4B6E79182B295E001BDDA9 /* images */,
 				6F2CF0F01827EBED00BAC5FD /* commons */,
 				6F2CF0E51827E5B800BAC5FD /* models */,
 				6F2CF0E31827E53C00BAC5FD /* components */,
-				6FD13A911827935D00484DE4 /* other */,
 				6FD13A5B1827926100484DE4 /* controllers */,
 				6FD13A571827923800484DE4 /* third */,
 				6FD13A371827921100484DE4 /* AppDelegate.h */,
@@ -338,7 +368,7 @@
 			children = (
 				6F2CF0E61827E64F00BAC5FD /* commons */,
 				6FD13A5C1827927200484DE4 /* ParkingLotViewController.h */,
-				6FD13A5D1827927200484DE4 /* ParkingLotViewController.m */,
+				6FD13A5D1827927200484DE4 /* ParkingLotViewController.mm */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -385,15 +415,6 @@
 				6FD13A84182792BE00484DE4 /* BMKVersion.h */,
 			);
 			path = inc;
-			sourceTree = "<group>";
-		};
-		6FD13A911827935D00484DE4 /* other */ = {
-			isa = PBXGroup;
-			children = (
-				6FD13A921827937100484DE4 /* Others.h */,
-				6FD13A931827937100484DE4 /* Others.mm */,
-			);
-			name = other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,6 +494,7 @@
 			files = (
 				6FD13A901827934000484DE4 /* mapapi.bundle in Resources */,
 				6FD13A331827921100484DE4 /* InfoPlist.strings in Resources */,
+				6F4B6E7B182B2980001BDDA9 /* icon_parking_lot@2x.png in Resources */,
 				6FD13A3B1827921100484DE4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,17 +515,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F2CF1041827EDCB00BAC5FD /* PopViewController.m in Sources */,
+				6F4B6E721829D4A7001BDDA9 /* UIImage+Extension.m in Sources */,
 				6F2CF0F71827EC2700BAC5FD /* NSMutableDictionary+Extension.m in Sources */,
-				6FD13A941827937100484DE4 /* Others.mm in Sources */,
 				6F2CF0E91827E65E00BAC5FD /* BaseViewController.m in Sources */,
 				6F2CF0F41827EC1400BAC5FD /* NSDictionary+Extension.m in Sources */,
 				6FD13A391827921100484DE4 /* AppDelegate.m in Sources */,
+				6F4B6E78182A3096001BDDA9 /* ParkingLotAnnotation.m in Sources */,
+				6F4B6E75182A1EDE001BDDA9 /* ParkingLotAnnotationView.m in Sources */,
 				6F2CF0EC1827E88700BAC5FD /* ParkingLotBubbleView.m in Sources */,
 				6F2CF1071827EDD600BAC5FD /* NavigationViewController.m in Sources */,
 				6F2CF1011827ED5D00BAC5FD /* BaseEntity.m in Sources */,
 				6F2CF0EF1827EA9000BAC5FD /* ParkingLotEntity.m in Sources */,
 				6F2CF0FD1827EC8800BAC5FD /* NSString+Utils.m in Sources */,
-				6FD13A5E1827927200484DE4 /* ParkingLotViewController.m in Sources */,
+				6FD13A5E1827927200484DE4 /* ParkingLotViewController.mm in Sources */,
 				6FD13A351827921100484DE4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

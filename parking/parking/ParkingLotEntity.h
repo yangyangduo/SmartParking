@@ -11,8 +11,6 @@
 
 @interface ParkingLotEntity : BaseEntity
 
-@property (strong, nonatomic) NSString *identifier;
-@property (strong, nonatomic) NSString *name;
 @property (assign, nonatomic) double latitude;
 @property (assign, nonatomic) double longitude;
 

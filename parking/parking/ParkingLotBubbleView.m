@@ -19,4 +19,11 @@
     return self;
 }
 
++ (ParkingLotBubbleView *)viewWithParkingLot:(ParkingLotEntity *)parkingLot {
+    ParkingLotBubbleView *view = [[ParkingLotBubbleView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
+    
+    
+    return view;
+}
+
 @end

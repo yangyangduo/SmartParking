@@ -10,6 +10,8 @@
 #import "BaseViewController.h"
 #import "BMapKit.h"
 
-@interface ParkingLotViewController : BaseViewController<BMKMapViewDelegate>
+@interface ParkingLotViewController : BaseViewController<BMKMapViewDelegate, BMKSearchDelegate>
+
+@property (strong, nonatomic) NSMutableArray *parkingLots;
 
 @end
