@@ -14,4 +14,7 @@
 @property (assign, nonatomic) double latitude;
 @property (assign, nonatomic) double longitude;
 
+@property (assign, nonatomic) NSUInteger numberOfParkingSpace;
+@property (assign, nonatomic) NSUInteger numberOfEmptyParkingSpace;
+
 @end

@@ -9,8 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "ParkingLotEntity.h"
 
+#define PARKING_LOT_BUBBLE_VIEW_HEIGHT 110
+
 @interface ParkingLotBubbleView : UIView
 
-+ (ParkingLotBubbleView *)viewWithParkingLot:(ParkingLotEntity *)parkingLot;
+@property (strong, nonatomic) ParkingLotEntity *parkingLotEntity;
+
++ (ParkingLotBubbleView *)viewWithPoint:(CGPoint)point;
 
 @end

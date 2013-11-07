@@ -41,6 +41,7 @@
 
 @implementation ParkingLotViewController {
     BMKMapView *_mapView_;
+    BMKSearch *_routeSearch_;
     ParkingLotBubbleView *_bubbleView_;
 }
 
@@ -65,12 +66,18 @@
     if(_mapView_ != nil && _mapView_.delegate == nil) {
         _mapView_.delegate = self;
     }
+    if(_routeSearch_ != nil && _routeSearch_.delegate == nil) {
+        _routeSearch_.delegate = self;
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     if(_mapView_ != nil) {
         _mapView_.delegate = nil;
+    }
+    if(_routeSearch_ != nil) {
+        _routeSearch_.delegate = nil;
     }
 }
 
@@ -84,6 +91,9 @@
 #pragma mark Initializations
 
 - (void)initDefaults {
+    _routeSearch_ = [[BMKSearch alloc] init];
+    _routeSearch_.delegate = self;
+    
     ParkingLotEntity *en = [[ParkingLotEntity alloc] init];
     en.latitude = 28.234484;
     en.longitude = 112.945181;
@@ -94,17 +104,17 @@
 - (void)initUI {
     self.view.backgroundColor = [UIColor yellowColor];
     
-    _mapView_ = [[BMKMapView alloc] initWithFrame:CGRectMake(0, 10, 320, 400)];
+    _mapView_ = [[BMKMapView alloc] initWithFrame:self.view.bounds];
     _mapView_.delegate = self;
     [self.view addSubview:_mapView_];
     
 
     
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(10, 430, 150, 25)];
-    [btn setBackgroundColor:[UIColor blackColor]];
-    [btn setTitle:@"sssss" forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(jjj) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
+//    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(10, 430, 150, 25)];
+//    [btn setBackgroundColor:[UIColor blackColor]];
+//    [btn setTitle:@"sssss" forState:UIControlStateNormal];
+//    [btn addTarget:self action:@selector(jjj) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:btn];
     
     [self showParkingLotsOnMap];
     [self showMyLocationWithZoomLevel:13];
@@ -173,6 +183,36 @@
     _mapView_.showsUserLocation = YES;
     [_mapView_ setCenterCoordinate:_mapView_.userLocation.coordinate animated:YES];
     _mapView_.zoomLevel = zoomLevel;
+}
+
+- (void)showParkingLotViewWithEntity:(ParkingLotEntity *)entity {
+    if(_bubbleView_ == nil) {
+        _bubbleView_ = [ParkingLotBubbleView viewWithPoint:CGPointMake(0, self.view.bounds.size.height)];
+        [self.view addSubview: _bubbleView_];
+    }
+    
+    _bubbleView_.parkingLotEntity = entity;
+    
+    [UIView animateWithDuration:0.3f
+                     animations:^{
+                         _bubbleView_.center = CGPointMake(_bubbleView_.center.x, _bubbleView_.center.y - PARKING_LOT_BUBBLE_VIEW_HEIGHT);
+                     }
+                     completion:^(BOOL finished) {
+                         NSLog(@"finished");
+                     }
+     ];
+}
+
+- (void)hideParkingLotView {
+    if(_bubbleView_ == nil) return;
+    [UIView animateWithDuration:0.3f
+                     animations:^{
+                         _bubbleView_.center = CGPointMake(_bubbleView_.center.x, _bubbleView_.center.y + PARKING_LOT_BUBBLE_VIEW_HEIGHT);
+                     }
+                     completion:^(BOOL finished) {
+                         NSLog(@"finished");
+                     }
+     ];
 }
 
 - (void)jjj {
@@ -324,21 +364,8 @@
     if([annotation isKindOfClass:[RouteAnnotation class]]) {
         return [self getRouteAnnotationView:mapView viewForAnnotation:(RouteAnnotation *)annotation];
     } else if([annotation isKindOfClass:[BMKPointAnnotation class]]) {
-
-    //BMKAnnotationView
-        
         ParkingLotAnnotationView *annotationView = [[ParkingLotAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"parking_node"];
         annotationView.canShowCallout = NO;
-        
-    //retina 60*60  30*30
-//    v.image = [UIImage imageNamed:@"pin_green"];
-//    v.backgroundColor = [UIColor blackColor];
-//    v.frame = CGRectMake(0, 0, 100, 100);
-    
-        UIView *vv = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-        vv.backgroundColor = [UIColor greenColor];
-        annotationView.paopaoView = [[BMKActionPaopaoView alloc] initWithCustomView:vv];
-    
         return annotationView;
     }
     return nil;
@@ -357,13 +384,16 @@
 
 - (void)mapView:(BMKMapView *)mapView didSelectAnnotationView:(BMKAnnotationView *)view {
     if([view isKindOfClass:[ParkingLotAnnotationView class]]) {
-
+        
+        
+        [self showParkingLotViewWithEntity:nil];
     }
 }
 
 - (void)mapView:(BMKMapView *)mapView didDeselectAnnotationView:(BMKAnnotationView *)view {
     if([view isKindOfClass:[ParkingLotAnnotationView class]]) {
-
+        NSLog(@"deselect");
+        [self hideParkingLotView];
     }
 }
 
