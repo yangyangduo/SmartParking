@@ -21,6 +21,7 @@
 		6F4B6E78182A3096001BDDA9 /* ParkingLotAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4B6E77182A3096001BDDA9 /* ParkingLotAnnotation.m */; };
 		6F4B6E7F182B3A91001BDDA9 /* icon_parking_lot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F4B6E7E182B3A91001BDDA9 /* icon_parking_lot@2x.png */; };
 		6F7ED27F182B79C2005C7D30 /* DrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7ED27E182B79C2005C7D30 /* DrawerViewController.m */; };
+		6F7ED282182B7ADB005C7D30 /* UIDevice+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7ED281182B7ADB005C7D30 /* UIDevice+Extension.m */; };
 		6FD13A291827921100484DE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A281827921100484DE4 /* Foundation.framework */; };
 		6FD13A2B1827921100484DE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A2A1827921100484DE4 /* CoreGraphics.framework */; };
 		6FD13A2D1827921100484DE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A2C1827921100484DE4 /* UIKit.framework */; };
@@ -81,6 +82,8 @@
 		6F4B6E7E182B3A91001BDDA9 /* icon_parking_lot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_parking_lot@2x.png"; sourceTree = "<group>"; };
 		6F7ED27D182B79C2005C7D30 /* DrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerViewController.h; sourceTree = "<group>"; };
 		6F7ED27E182B79C2005C7D30 /* DrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerViewController.m; sourceTree = "<group>"; };
+		6F7ED280182B7ADB005C7D30 /* UIDevice+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Extension.h"; sourceTree = "<group>"; };
+		6F7ED281182B7ADB005C7D30 /* UIDevice+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Extension.m"; sourceTree = "<group>"; };
 		6FD13A251827921100484DE4 /* parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD13A281827921100484DE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6FD13A2A1827921100484DE4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -240,6 +243,8 @@
 				6F2CF0F61827EC2700BAC5FD /* NSMutableDictionary+Extension.m */,
 				6F4B6E701829D4A7001BDDA9 /* UIImage+Extension.h */,
 				6F4B6E711829D4A7001BDDA9 /* UIImage+Extension.m */,
+				6F7ED280182B7ADB005C7D30 /* UIDevice+Extension.h */,
+				6F7ED281182B7ADB005C7D30 /* UIDevice+Extension.m */,
 			);
 			name = categories;
 			sourceTree = "<group>";
@@ -532,6 +537,7 @@
 				6F2CF0F71827EC2700BAC5FD /* NSMutableDictionary+Extension.m in Sources */,
 				6F2CF0E91827E65E00BAC5FD /* BaseViewController.m in Sources */,
 				6F2CF0F41827EC1400BAC5FD /* NSDictionary+Extension.m in Sources */,
+				6F7ED282182B7ADB005C7D30 /* UIDevice+Extension.m in Sources */,
 				6F7ED27F182B79C2005C7D30 /* DrawerViewController.m in Sources */,
 				6FD13A391827921100484DE4 /* AppDelegate.m in Sources */,
 				6F4B6E78182A3096001BDDA9 /* ParkingLotAnnotation.m in Sources */,
