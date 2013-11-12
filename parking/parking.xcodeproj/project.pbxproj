@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		6F2CF0E91827E65E00BAC5FD /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2CF0E81827E65E00BAC5FD /* BaseViewController.m */; };
 		6F2CF0EC1827E88700BAC5FD /* ParkingLotBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2CF0EB1827E88700BAC5FD /* ParkingLotBubbleView.m */; };
-		6F2CF0EF1827EA9000BAC5FD /* ParkingLotEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2CF0EE1827EA9000BAC5FD /* ParkingLotEntity.m */; };
+		6F2CF0EF1827EA9000BAC5FD /* ParkingLot.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2CF0EE1827EA9000BAC5FD /* ParkingLot.m */; };
 		6F2CF0F41827EC1400BAC5FD /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2CF0F31827EC1400BAC5FD /* NSDictionary+Extension.m */; };
 		6F2CF0F71827EC2700BAC5FD /* NSMutableDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2CF0F61827EC2700BAC5FD /* NSMutableDictionary+Extension.m */; };
 		6F2CF0FD1827EC8800BAC5FD /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2CF0FC1827EC8800BAC5FD /* NSString+Utils.m */; };
 		6F2CF1011827ED5D00BAC5FD /* BaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2CF1001827ED5D00BAC5FD /* BaseEntity.m */; };
 		6F2CF1041827EDCB00BAC5FD /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2CF1031827EDCB00BAC5FD /* PopViewController.m */; };
 		6F2CF1071827EDD600BAC5FD /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2CF1061827EDD600BAC5FD /* NavigationViewController.m */; };
+		6F4527B5182BD8D000D8BECF /* AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4527B4182BD8D000D8BECF /* AlertView.m */; };
+		6F4527B8182BDB9000D8BECF /* alert_failed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F4527B6182BDB9000D8BECF /* alert_failed@2x.png */; };
+		6F4527B9182BDB9000D8BECF /* alert_success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F4527B7182BDB9000D8BECF /* alert_success@2x.png */; };
 		6F4B6E721829D4A7001BDDA9 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4B6E711829D4A7001BDDA9 /* UIImage+Extension.m */; };
 		6F4B6E75182A1EDE001BDDA9 /* ParkingLotAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4B6E74182A1EDE001BDDA9 /* ParkingLotAnnotationView.m */; };
 		6F4B6E78182A3096001BDDA9 /* ParkingLotAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4B6E77182A3096001BDDA9 /* ParkingLotAnnotation.m */; };
@@ -23,6 +26,8 @@
 		6F7ED27F182B79C2005C7D30 /* DrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7ED27E182B79C2005C7D30 /* DrawerViewController.m */; };
 		6F7ED282182B7ADB005C7D30 /* UIDevice+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7ED281182B7ADB005C7D30 /* UIDevice+Extension.m */; };
 		6F7ED287182B8EB4005C7D30 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F7ED289182B8EB4005C7D30 /* Localizable.strings */; };
+		6F86582418310F3C00680C70 /* ParkingLotCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F86582318310F3C00680C70 /* ParkingLotCollection.m */; };
+		6F8658261831F4BE00680C70 /* btn_show_my_location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F8658251831F4BE00680C70 /* btn_show_my_location@2x.png */; };
 		6FD13A291827921100484DE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A281827921100484DE4 /* Foundation.framework */; };
 		6FD13A2B1827921100484DE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A2A1827921100484DE4 /* CoreGraphics.framework */; };
 		6FD13A2D1827921100484DE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD13A2C1827921100484DE4 /* UIKit.framework */; };
@@ -60,8 +65,8 @@
 		6F2CF0E81827E65E00BAC5FD /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		6F2CF0EA1827E88700BAC5FD /* ParkingLotBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingLotBubbleView.h; sourceTree = "<group>"; };
 		6F2CF0EB1827E88700BAC5FD /* ParkingLotBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkingLotBubbleView.m; sourceTree = "<group>"; };
-		6F2CF0ED1827EA9000BAC5FD /* ParkingLotEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingLotEntity.h; sourceTree = "<group>"; };
-		6F2CF0EE1827EA9000BAC5FD /* ParkingLotEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkingLotEntity.m; sourceTree = "<group>"; };
+		6F2CF0ED1827EA9000BAC5FD /* ParkingLot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingLot.h; sourceTree = "<group>"; };
+		6F2CF0EE1827EA9000BAC5FD /* ParkingLot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkingLot.m; sourceTree = "<group>"; };
 		6F2CF0F21827EC1400BAC5FD /* NSDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extension.h"; sourceTree = "<group>"; };
 		6F2CF0F31827EC1400BAC5FD /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
 		6F2CF0F51827EC2700BAC5FD /* NSMutableDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Extension.h"; sourceTree = "<group>"; };
@@ -74,6 +79,10 @@
 		6F2CF1031827EDCB00BAC5FD /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
 		6F2CF1051827EDD600BAC5FD /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
 		6F2CF1061827EDD600BAC5FD /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		6F4527B3182BD8D000D8BECF /* AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertView.h; sourceTree = "<group>"; };
+		6F4527B4182BD8D000D8BECF /* AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertView.m; sourceTree = "<group>"; };
+		6F4527B6182BDB9000D8BECF /* alert_failed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert_failed@2x.png"; sourceTree = "<group>"; };
+		6F4527B7182BDB9000D8BECF /* alert_success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert_success@2x.png"; sourceTree = "<group>"; };
 		6F4B6E701829D4A7001BDDA9 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		6F4B6E711829D4A7001BDDA9 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		6F4B6E73182A1EDE001BDDA9 /* ParkingLotAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingLotAnnotationView.h; sourceTree = "<group>"; };
@@ -87,8 +96,11 @@
 		6F7ED281182B7ADB005C7D30 /* UIDevice+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Extension.m"; sourceTree = "<group>"; };
 		6F7ED285182B8EA6005C7D30 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		6F7ED286182B8EA6005C7D30 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		6F7ED288182B8EB4005C7D30 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		6F7ED28A182B8EB8005C7D30 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		6F7ED288182B8EB4005C7D30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6F7ED28A182B8EB8005C7D30 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		6F86582218310F3C00680C70 /* ParkingLotCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingLotCollection.h; sourceTree = "<group>"; };
+		6F86582318310F3C00680C70 /* ParkingLotCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkingLotCollection.m; sourceTree = "<group>"; };
+		6F8658251831F4BE00680C70 /* btn_show_my_location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_show_my_location@2x.png"; sourceTree = "<group>"; };
 		6FD13A251827921100484DE4 /* parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD13A281827921100484DE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6FD13A2A1827921100484DE4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -186,6 +198,8 @@
 		6F2CF0E31827E53C00BAC5FD /* components */ = {
 			isa = PBXGroup;
 			children = (
+				6F4527B2182BD8A700D8BECF /* alert_view */,
+				6F4527B1182BC81B00D8BECF /* buttons */,
 				6F7ED27C182B79A8005C7D30 /* drawer_navigation */,
 				6F2CF0E41827E58F00BAC5FD /* maps */,
 			);
@@ -209,8 +223,10 @@
 			isa = PBXGroup;
 			children = (
 				6F2CF0FE1827ED4C00BAC5FD /* commons */,
-				6F2CF0ED1827EA9000BAC5FD /* ParkingLotEntity.h */,
-				6F2CF0EE1827EA9000BAC5FD /* ParkingLotEntity.m */,
+				6F2CF0ED1827EA9000BAC5FD /* ParkingLot.h */,
+				6F2CF0EE1827EA9000BAC5FD /* ParkingLot.m */,
+				6F86582218310F3C00680C70 /* ParkingLotCollection.h */,
+				6F86582318310F3C00680C70 /* ParkingLotCollection.m */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -263,6 +279,22 @@
 			name = commons;
 			sourceTree = "<group>";
 		};
+		6F4527B1182BC81B00D8BECF /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = buttons;
+			sourceTree = "<group>";
+		};
+		6F4527B2182BD8A700D8BECF /* alert_view */ = {
+			isa = PBXGroup;
+			children = (
+				6F4527B3182BD8D000D8BECF /* AlertView.h */,
+				6F4527B4182BD8D000D8BECF /* AlertView.m */,
+			);
+			name = alert_view;
+			sourceTree = "<group>";
+		};
 		6F4B6E6C1828F051001BDDA9 /* restclient */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,7 +305,10 @@
 		6F4B6E79182B295E001BDDA9 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				6F8658251831F4BE00680C70 /* btn_show_my_location@2x.png */,
 				6F4B6E7E182B3A91001BDDA9 /* icon_parking_lot@2x.png */,
+				6F4527B6182BDB9000D8BECF /* alert_failed@2x.png */,
+				6F4527B7182BDB9000D8BECF /* alert_success@2x.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -517,7 +552,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F4527B8182BDB9000D8BECF /* alert_failed@2x.png in Resources */,
+				6F8658261831F4BE00680C70 /* btn_show_my_location@2x.png in Resources */,
 				6F7ED287182B8EB4005C7D30 /* Localizable.strings in Resources */,
+				6F4527B9182BDB9000D8BECF /* alert_success@2x.png in Resources */,
 				6FD13A901827934000484DE4 /* mapapi.bundle in Resources */,
 				6FD13A331827921100484DE4 /* InfoPlist.strings in Resources */,
 				6F4B6E7F182B3A91001BDDA9 /* icon_parking_lot@2x.png in Resources */,
@@ -546,6 +584,7 @@
 				6F2CF0E91827E65E00BAC5FD /* BaseViewController.m in Sources */,
 				6F2CF0F41827EC1400BAC5FD /* NSDictionary+Extension.m in Sources */,
 				6F7ED282182B7ADB005C7D30 /* UIDevice+Extension.m in Sources */,
+				6F86582418310F3C00680C70 /* ParkingLotCollection.m in Sources */,
 				6F7ED27F182B79C2005C7D30 /* DrawerViewController.m in Sources */,
 				6FD13A391827921100484DE4 /* AppDelegate.m in Sources */,
 				6F4B6E78182A3096001BDDA9 /* ParkingLotAnnotation.m in Sources */,
@@ -553,8 +592,9 @@
 				6F2CF0EC1827E88700BAC5FD /* ParkingLotBubbleView.m in Sources */,
 				6F2CF1071827EDD600BAC5FD /* NavigationViewController.m in Sources */,
 				6F2CF1011827ED5D00BAC5FD /* BaseEntity.m in Sources */,
-				6F2CF0EF1827EA9000BAC5FD /* ParkingLotEntity.m in Sources */,
+				6F2CF0EF1827EA9000BAC5FD /* ParkingLot.m in Sources */,
 				6F2CF0FD1827EC8800BAC5FD /* NSString+Utils.m in Sources */,
+				6F4527B5182BD8D000D8BECF /* AlertView.m in Sources */,
 				6FD13A5E1827927200484DE4 /* ParkingLotMapViewController.mm in Sources */,
 				6FD13A351827921100484DE4 /* main.m in Sources */,
 			);

@@ -30,6 +30,7 @@
     
     [self initDefaults];
     [self initUI];
+    [self setup];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,6 +47,10 @@
 }
 
 - (void)initUI {
+    
+}
+
+- (void)setup {
     
 }
 

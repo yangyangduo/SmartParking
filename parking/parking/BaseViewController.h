@@ -13,6 +13,7 @@
 
 - (void)initDefaults;
 - (void)initUI;
+- (void)setup;
 
 - (void)registerTapGestureToResignKeyboard;
 - (void)triggerTapGestureEventForResignKeyboard:(UIGestureRecognizer *)gesture;

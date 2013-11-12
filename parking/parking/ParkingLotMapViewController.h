@@ -9,9 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 #import "BMapKit.h"
+#import "UIImage+Extension.h"
+#import "ParkingLotAnnotationView.h"
+#import "ParkingLotBubbleView.h"
+#import "ParkingLotAnnotation.h"
+#import "ParkingLotCollection.h"
 
-@interface ParkingLotMapViewController : BaseViewController<BMKMapViewDelegate, BMKSearchDelegate>
+@interface ParkingLotMapViewController : BaseViewController<BMKMapViewDelegate, BMKSearchDelegate, BubbleViewDelegate>
 
-@property (strong, nonatomic) NSMutableArray *parkingLots;
+@property (strong, nonatomic) ParkingLotCollection *parkingLots;
 
 @end

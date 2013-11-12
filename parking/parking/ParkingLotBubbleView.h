@@ -7,14 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ParkingLotEntity.h"
+#import "ParkingLot.h"
+#import <CoreLocation/CLLocation.h>
 
 #define PARKING_LOT_BUBBLE_VIEW_HEIGHT 110
 
+@protocol BubbleViewDelegate;
+
 @interface ParkingLotBubbleView : UIView
 
-@property (strong, nonatomic) ParkingLotEntity *parkingLotEntity;
+@property (strong, nonatomic) ParkingLot *parkingLot;
+@property (assign, nonatomic) id<BubbleViewDelegate> delegate;
 
 + (ParkingLotBubbleView *)viewWithPoint:(CGPoint)point;
+
+@end
+
+@protocol BubbleViewDelegate <NSObject>
+
+- (void)bubbleView:(ParkingLotBubbleView *)bubbleView pathPlanningTo:(CLLocationCoordinate2D)coordinate;
 
 @end

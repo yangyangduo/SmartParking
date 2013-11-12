@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "parking/ParkingLotMapViewController.mm"
-            timestampString = "405508488.802043"
+            timestampString = "405929150.93641"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "361"
-            endingLineNumber = "361"
+            startingLineNumber = "458"
+            endingLineNumber = "458"
             landmarkName = "@implementation ParkingLotMapViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -26,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "parking/ParkingLotMapViewController.mm"
-            timestampString = "405508488.802043"
+            timestampString = "405929150.93641"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
-            landmarkName = "@implementation ParkingLotMapViewController"
-            landmarkType = "3">
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "-setup"
+            landmarkType = "5">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -61,6 +61,66 @@
                   startingLineNumber = "116"
                   endingLineNumber = "116"
                   offsetFromSymbolStart = "1110">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "parking/ParkingLotMapViewController.mm"
+            timestampString = "405929839.550287"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "360"
+            endingLineNumber = "360"
+            landmarkName = "-onGetDrivingRouteResult:errorCode:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ParkingLotMapViewController onGetDrivingRouteResult:errorCode:]"
+                  moduleName = "parking"
+                  urlString = "file:///Users/young/Downloads/SmartParking/parking/parking/ParkingLotMapViewController.mm"
+                  timestampString = "405929847.386919"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "360"
+                  endingLineNumber = "360"
+                  offsetFromSymbolStart = "98">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ParkingLotMapViewController onGetDrivingRouteResult:errorCode:]"
+                  moduleName = "parking"
+                  urlString = "file:///Users/young/Downloads/SmartParking/parking/parking/ParkingLotMapViewController.mm"
+                  timestampString = "405929847.387363"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "360"
+                  endingLineNumber = "360"
+                  offsetFromSymbolStart = "4472">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ParkingLotMapViewController onGetDrivingRouteResult:errorCode:]"
+                  moduleName = "parking"
+                  urlString = "file:///Users/young/Downloads/SmartParking/parking/parking/ParkingLotMapViewController.mm"
+                  timestampString = "405929847.387734"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "360"
+                  endingLineNumber = "360"
+                  offsetFromSymbolStart = "5114">
                </Location>
             </Locations>
          </BreakpointContent>

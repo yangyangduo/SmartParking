@@ -8,6 +8,13 @@
 
 /* Parking lot map view */
 
+"start_point"                    = "起点";
+"terminal_point"                 = "终点";
+"address"                        = "地址";
+
 "parking_space_remain"           = "剩余车位";
 "parking_space"                  = "位";
-"path_planning"                  = "路径规划";
+"path_plan"                      = "路径规划";
+"path_planning"                  = "路径规划中...";
+"path_plan_success"              = "路径规划成功";
+"path_plan_failed"               = "路径规划失败";
